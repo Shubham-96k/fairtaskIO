@@ -1,0 +1,24 @@
+
+
+<div class="card mb-2" #card (click)="setstyle(card)">
+    <div class="card-header text-white">
+        <h4>
+            <strong>
+                {{getfair.fairName | uppercase}}
+            </strong>
+        </h4>
+    </div>
+    <div class="card-body">
+        <p>
+            <strong>
+                Event : {{getfair.type}}
+            </strong>
+        </p>
+        <p>
+            <strong>
+                Date : {{getfair.startDate * 1000 | date}}
+            </strong>
+        </p>
+    </div>
+</div>
+

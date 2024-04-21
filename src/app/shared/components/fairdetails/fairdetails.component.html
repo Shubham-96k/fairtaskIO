@@ -1,0 +1,32 @@
+
+<div class="card">
+    <div class="card-body p-0">
+        <div class="bannerImg mb-4">
+            <img [src]="fairdetail.bannerUrl" [alt]="fairdetail.fairName" [title]="fairdetail.fairName">
+            <div class="info">
+                <p>
+                    <strong>
+                        {{fairdetail.fairName}}
+                    </strong>
+                </p>
+                <p>
+                    <strong>
+                        {{fairdetail.type}}
+                    </strong>
+                </p>
+                <p>
+                    <strong>
+                        {{(fairdetail.endDate * 1000)-(24*60*60*1000) | date}}
+                    </strong>
+                </p>
+            </div>
+        </div>
+        
+        <div class="description p-4">
+            <p [innerHTML]="fairdetail.candidateDescription">
+
+            </p>
+        </div>
+    </div>
+</div>
+
